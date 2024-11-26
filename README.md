@@ -15,3 +15,23 @@ No deploy não serão criados discos no ambiente docker, sendo assim, todos os f
 - [Docker](https://www.docker.com/)
 - Mínimo memória Notebook ou CPU - 8G, ideal 16G
 - Mínimo memória docker - 4G, ideal 8G
+
+## Antes de configurar
+
+1. clonar esse projeto na sua máquina local: `git clone https://github.com/lucasskuja/estudo-composer-local.git`
+1. Após o clone acessar o diretório onde a pasta `composer-local-dev` está. Ex: `cd composer-local-dev`
+1. É recomendável que para evitar problemas e isolarmos a versão do python, trabalhar com uma virtualenv. 
+~~~Shell
+# Linux
+virtualenv venv
+virtualenv --python=$(which python$VERSAO) venv # EXEMPLO: virtualenv --python=$(which python$3.9)
+source venv/bin/activate
+~~~
+~~~PowerShell
+# Windows
+python -m venv venv
+python -m venv --python=pythonVERSAO venv
+.\venv\Scripts\Activate.ps1
+~~~
+> _Lembrando que este passo não é obrigatório._
+4. Após isso é só seguir o passo a passo de configuração do composer-local descrito no repositório `composer-local-dev` [nesse link](https://github.com/GoogleCloudPlatform/composer-local-dev/blob/eacc17c2c934b7873b7302f4d6b2dd9bdaf6d9d8/README.md#configure-credentials)
