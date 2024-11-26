@@ -24,7 +24,7 @@ No deploy não serão criados discos no ambiente docker, sendo assim, todos os f
 ~~~Shell
 # Linux
 virtualenv venv
-virtualenv --python=$(which python$VERSAO) venv # EXEMPLO: virtualenv --python=$(which python$3.9)
+virtualenv --python=$(which python$VERSAO) venv # EXEMPLO: virtualenv --python=$(which python3.9)
 source venv/bin/activate
 ~~~
 ~~~PowerShell
